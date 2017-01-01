@@ -3,7 +3,6 @@ package com.mairyu.app8;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.TextView;
@@ -20,6 +19,10 @@ public class MainActivity extends AppCompatActivity {
         TextView txtHealthy = (TextView) findViewById(R.id.txtHealthy);
         final CheckBox chxHealthyYes = (CheckBox) findViewById(R.id.chxHealthyYes);
         final CheckBox chxHealthyNo = (CheckBox) findViewById(R.id.chxHealthyNo);
+
+        TextView txtTrueAndTrue = (TextView) findViewById(R.id.txtTrueAndTrue);
+        final CheckBox chxTrueAndTrueYes = (CheckBox) findViewById(R.id.chxTrueAndTrueYes);
+        final CheckBox chxTrueAndTrueNo = (CheckBox) findViewById(R.id.chxTrueAndTrueNo);
 
         chxHealthyYes.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -55,6 +58,12 @@ public class MainActivity extends AppCompatActivity {
         chxHealthyYes.setChecked(power > 70 ? true : false);
         chxHealthyNo.setChecked(power > 70 ? false : true);
 
-        Log.i("LOG: ", power + "");
+//        Log.i("LOG: ", power + "");
+
+        boolean trueAndTrue = (true && true);
+
+        if (trueAndTrue) {
+
+        }
     }
 }

@@ -25,8 +25,25 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal">
+            android:layout_height="wrap_content"
+            android:layout_weight="0.02">
+
+            <TextView
+                android:text="True And False"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTrueAndFalse"
+                android:layout_weight="1"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_weight="0.02"
+            android:id="@+id/chxTrueYes">
 
             <TextView
                 android:text="Am I Healthy"
@@ -52,5 +69,39 @@
                 android:layout_weight="1" />
 
         </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:padding="0dp"
+            android:layout_margin="0dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:text="True And True"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTrueAndTrue"
+                android:layout_weight="1"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:text="Yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/chxTrueAndTrueYes" />
+
+            <CheckBox
+                android:text="No"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chxTrueAndTrueNo"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
     </LinearLayout>
 </RelativeLayout>
